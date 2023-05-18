@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'basesEG';
+  counter:number=100;
+  incrementBy(value:number):void{
+    this.counter=this.counter+value;
+  }
+  resetCount(){
+    this.counter=100;
+  }
 }
